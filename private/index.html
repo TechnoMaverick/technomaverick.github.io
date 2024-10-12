@@ -5,6 +5,8 @@
             "prefix": "./dist",
             "siteTitle": "Rin | Site Tracker"
         })
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>let statusChart = {};</script>
     </head>
     <body>
         @@include('../source/templates/nav.html', {
@@ -12,7 +14,21 @@
         })
         <main>
             <section class="content">
-                <p>Intro content</p>
+                <p><h1>Rin's Site Tracker</h1>
+                    <section class="charts">
+                        <div class="charts--triple">
+                            @@include('../source/templates/status.html', {
+                                "sitename": "godly behaviour",
+                                "siteID": "gb"
+                            })
+                            @@include('../source/templates/status.html', {
+                                "sitename": "all active sites",
+                                "siteID": "all"
+                            })
+                        </div>
+                    </section>
+                </p>
+
             </section>
         </main>
         @@include('../source/templates/foot.html', {

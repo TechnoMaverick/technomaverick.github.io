@@ -186,19 +186,9 @@ a {
     gap: var(--space--xs); }
     .nav--inner button,
     .nav--inner a {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
       gap: var(--space--sm);
       width: calc(var(--size--menu-width) - (2 * var(--space--sm)));
       aspect-ratio: 1 / 1;
@@ -210,7 +200,7 @@ a {
       text-align: center;
       background: var(--bg--primary);
       border-radius: 5px;
-      line-height: 100%;
+      line-height: 200%;
       -webkit-transition-duration: 0.3s;
               transition-duration: 0.3s;
       border: none;
