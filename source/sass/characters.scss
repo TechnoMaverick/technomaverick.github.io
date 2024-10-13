@@ -1,0 +1,9 @@
+.lux-track,
+.lux {
+    --rgb: var(--rgb);
+    --dkrgb: var(--rgb-dark, var(--rgb));
+
+    &.alekto {--rgb: 165, 41, 0;}
+    &.amaterasu, &.ama {--rgb: 217, 145, 0;}
+    &.kylee {--rgb: 0, 175, 191;}
+}
