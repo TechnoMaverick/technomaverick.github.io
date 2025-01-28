@@ -1682,7 +1682,7 @@ function populateThreads(array, siteObject) {
         
         let thread = {
             character: JSON.parse(array[i].Character),
-            description: array[i].description,
+            description: array[i].Description,
             featuring: JSON.parse(array[i].Featuring),
             date: array[i].ICDate,
             updated: array[i].LastUpdated,
